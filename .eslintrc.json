@@ -1,0 +1,79 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:jest/all"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "jest",
+    "import"
+  ],
+  "rules": {
+    "no-console": ["error", {"allow":  ["info", "error", "warn"]}],
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "keyword-spacing": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "no-unused-vars": ["off"],
+        "no-undef": ["off"],
+        "max-len": ["error", 140],
+        "indent": "off",
+        "quotes": ["error", "single"],
+        "linebreak-style": "off",
+        "newline-before-return": "error",
+        "array-bracket-spacing": ["error", "always"],
+        "import/newline-after-import": ["error", { "count": 1 }],
+        "comma-dangle": ["error", {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "functions": "always-multiline"
+        }],
+        "@typescript-eslint/indent": ["error", 2],
+        "@typescript-eslint/member-delimiter-style": ["error", {
+          "multiline": {
+            "requireLast": true
+          }
+        }],
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-use-before-define": "error",
+        "@typescript-eslint/no-this-alias": [ "error", { "allowedNames": [ "self" ] } ],
+        "@typescript-eslint/prefer-function-type": "error",
+        "@typescript-eslint/quotes": [ "error", "single", { "avoidEscape": true } ],
+        "@typescript-eslint/semi": [ "error",  "always" ],
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/unified-signatures": "error",
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "jest/prefer-called-with": "off",
+        "jest/no-hooks": "off",
+        "jest/prefer-expect-assertions": "off",
+        "no-underscore-dangle": "off",
+        "no-multiple-empty-lines": [ "error", { "max": 1, "maxEOF": 0 }]
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
