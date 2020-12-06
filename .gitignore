@@ -9,7 +9,9 @@
 # production
 /dist
 
-.idea
+/.idea
+
+/db
 
 # misc
 .env.local

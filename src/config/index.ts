@@ -3,4 +3,5 @@ export default {
   api: {
     prefix: '/api',
   },
+  dataFolder: 'media',
 };
