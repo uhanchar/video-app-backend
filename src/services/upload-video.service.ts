@@ -17,7 +17,7 @@ export interface IVideoCollectionItemData {
   createdAt: Date;
 }
 
-export const uploadVideoData = async (videoData: IVideoData, fileHash: string) => {
+export const uploadVideoData = async (videoData: IVideoData, fileHash: string): Promise<void> => {
   const videos: IVideoCollectionItemData[] = await fetchCollection(DbCollections.Videos);
   const videoCollectionItem = mapVideoCollectionItemData(videoData, fileHash);
   const updatedVideos = videos.concat(videoCollectionItem);
