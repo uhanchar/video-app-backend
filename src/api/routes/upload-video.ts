@@ -6,7 +6,7 @@ import { HttpStatus } from 'constants/http-status';
 import { ErrorMessages } from 'constants/error-messages.enum';
 
 const route = Router();
-const upload = multer({ dest: 'db/media/' });
+const upload = multer({ dest: 'db/media/videos' });
 
 export default (app: Router) => {
   app.use('/upload-video', route);

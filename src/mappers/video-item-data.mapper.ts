@@ -5,6 +5,7 @@ export const mapVideoCollectionItemData = (videoData: IVideoData, fileHash: stri
   id: fileHash,
   name: videoData.fileName,
   description: videoData.fileDescription,
-  link: `${ config.dataFolder }/${ fileHash }`,
+  link: `${ config.dataFolder }/${ config.videoFolder }/${ fileHash }`,
+  thumbnailLink: `${ config.dataFolder }/${ config.thumbnailFolder }/${ fileHash }.png`,
   createdAt: new Date(),
 });

@@ -3,5 +3,9 @@ export default {
   api: {
     prefix: '/api',
   },
+  dbFolder: 'db',
+  collectionsFolder: 'collections',
   dataFolder: 'media',
+  videoFolder: 'videos',
+  thumbnailFolder: 'thumbnails',
 };
