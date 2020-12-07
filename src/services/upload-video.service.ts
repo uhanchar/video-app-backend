@@ -1,5 +1,6 @@
 import ffmpeg from 'ffmpeg-static';
 import genThumbnail from 'simple-thumbnail';
+import path from 'path';
 
 import {
   fetchCollection,
@@ -31,7 +32,7 @@ const createVideoThumbnail = async (fileHash: string) => {
   await checkDirectoryExisting(thumbnailsDirectory);
 
   try {
-    await genThumbnail(`${videosDirectory}/${ fileHash }`, `${ thumbnailsDirectory }/${ fileHash }.png`, '600x?', {
+    await genThumbnail(`${ path.resolve(videosDirectory, fileHash) }`, `${ path.resolve(thumbnailsDirectory, fileHash) }.png`, '600x?', {
       path: ffmpeg,
     });
   } catch (error) {

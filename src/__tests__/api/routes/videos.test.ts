@@ -16,7 +16,7 @@ const mockedVideosCollection = [
 ];
 
 mock({
-  [`${path.resolve('db', 'collections')}`]: {
+  [`${ path.resolve('db', 'collections') }`]: {
     'videos': JSON.stringify(mockedVideosCollection),
   },
 });
