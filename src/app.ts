@@ -13,10 +13,4 @@ app.use(bodyParser.json());
 app.use(config.api.prefix, routes());
 app.use('/media', express.static(path.join(__dirname, '..', 'db', 'media')));
 
-app.listen(config.port, (e?: string) => {
-  if (e) {
-    throw new Error(e);
-  }
-
-  console.info(`Application is running on port ${ config.port }`);
-});
+export default app;
