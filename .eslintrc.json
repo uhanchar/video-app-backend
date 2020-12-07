@@ -65,6 +65,8 @@
         "jest/valid-expect": "error",
         "jest/prefer-called-with": "off",
         "jest/no-hooks": "off",
+        "jest/prefer-strict-equal": "off",
+        "jest/no-done-callback": "off",
         "jest/prefer-expect-assertions": "off",
         "no-underscore-dangle": "off",
         "no-multiple-empty-lines": [ "error", { "max": 1, "maxEOF": 0 }]
