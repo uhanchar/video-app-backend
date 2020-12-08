@@ -8,11 +8,11 @@ import {
   videosDirectory,
   thumbnailsDirectory,
   checkDirectoryExisting
-} from 'helpers/file-directory.helper';
-import { mapVideoCollectionItemData } from 'mappers/video-item-data.mapper';
-import { formatErrorMessage } from 'helpers/error-messages.helper';
-import { ErrorMessages } from 'constants/error-messages.enum';
-import { DbCollections } from 'constants/db-collections.enum';
+} from '../helpers/file-directory.helper';
+import { mapVideoCollectionItemData } from '../mappers/video-item-data.mapper';
+import { formatErrorMessage } from '../helpers/error-messages.helper';
+import { ErrorMessages } from '../constants/error-messages.enum';
+import { DbCollections } from '../constants/db-collections.enum';
 
 export interface IVideoData {
   fileName: string;

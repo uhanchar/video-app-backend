@@ -1,8 +1,8 @@
 import { Response, Router } from 'express';
 
-import  * as videoService from 'services/video.service';
-import { HttpStatus } from 'constants/http-status';
-import { ErrorMessages } from 'constants/error-messages.enum';
+import  * as videoService from '../../services/video.service';
+import { HttpStatus } from '../../constants/http-status';
+import { ErrorMessages } from '../../constants/error-messages.enum';
 
 const route = Router();
 

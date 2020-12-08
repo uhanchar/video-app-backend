@@ -1,5 +1,5 @@
-import { IVideoCollectionItemData, IVideoData } from 'services/upload-video.service';
-import config from 'config';
+import { IVideoCollectionItemData, IVideoData } from '../services/upload-video.service';
+import config from '../config';
 
 export const mapVideoCollectionItemData = (videoData: IVideoData, fileHash: string): IVideoCollectionItemData => ({
   id: fileHash,

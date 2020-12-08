@@ -2,7 +2,7 @@ import request from 'supertest';
 import mock from 'mock-fs';
 import path from 'path';
 
-import app from 'app';
+import app from '../../../app';
 
 const mockedVideosCollection = [
   {

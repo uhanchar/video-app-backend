@@ -1,8 +1,8 @@
 import { Router } from 'express';
 
-import videos from 'api/routes/videos';
-import video from 'api/routes/video';
-import uploadVideo from 'api/routes/upload-video';
+import videos from './routes/videos';
+import video from './routes/video';
+import uploadVideo from './routes/upload-video';
 
 export default () => {
   const app = Router();

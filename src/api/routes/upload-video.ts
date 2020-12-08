@@ -1,9 +1,9 @@
 import { Router, Response } from 'express';
 import multer from 'multer';
 
-import * as uploadVideoService from 'services/upload-video.service';
-import { HttpStatus } from 'constants/http-status';
-import { ErrorMessages } from 'constants/error-messages.enum';
+import * as uploadVideoService from '../../services/upload-video.service';
+import { HttpStatus } from '../../constants/http-status';
+import { ErrorMessages } from '../../constants/error-messages.enum';
 
 const route = Router();
 const upload = multer({ dest: 'db/media/videos' });

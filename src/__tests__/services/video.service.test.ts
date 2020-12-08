@@ -1,7 +1,7 @@
 import mock from 'mock-fs';
-
-import * as videoService from 'services/video.service';
 import path from 'path';
+
+import * as videoService from '../../services/video.service';
 
 const mockedVideosCollection = [
   {

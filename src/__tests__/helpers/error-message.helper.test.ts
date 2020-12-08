@@ -1,5 +1,5 @@
-import { formatErrorMessage } from 'helpers/error-messages.helper';
-import { ErrorMessages } from 'constants/error-messages.enum';
+import { formatErrorMessage } from '../../helpers/error-messages.helper';
+import { ErrorMessages } from '../../constants/error-messages.enum';
 
 const message = ErrorMessages.GENERIC_SERVER_ERROR;
 const errorMessage = 'Error message';

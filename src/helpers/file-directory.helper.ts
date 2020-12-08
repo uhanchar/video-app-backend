@@ -1,10 +1,10 @@
 import { existsSync, promises as fsPromises } from 'fs';
 import path from 'path';
 
-import config from 'config';
-import { formatErrorMessage } from 'helpers/error-messages.helper';
-import { ErrorMessages } from 'constants/error-messages.enum';
-import { DbCollections } from 'constants/db-collections.enum';
+import config from '../config';
+import { formatErrorMessage } from './error-messages.helper';
+import { ErrorMessages } from '../constants/error-messages.enum';
+import { DbCollections } from '../constants/db-collections.enum';
 
 const collectionsDirectory = path.resolve(__dirname, '..', '..', config.dbFolder, config.collectionsFolder);
 const defaultCollectionData: Array<void> = [];
